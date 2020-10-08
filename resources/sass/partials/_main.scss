@@ -1,0 +1,22 @@
+main {
+  // background-image: url('../../img/');
+  background-color: #dbeef2;
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+    h2 {
+      width: 100%;
+      margin-bottom: 10px;
+      color: #404040;
+    }
+    h3 {
+      color: #597a99;
+    }
+    img {
+      width: 300px;
+      margin:10px 20px 10px 0;
+    }
+  }
+}
