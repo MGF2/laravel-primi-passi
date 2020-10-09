@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  </head>
-  <body>
-    @include('partials.header')
-  </body>
-</html>
+
+    @extends('layout.app')
+    @section('titolo','La Molisana Home')
+    @section('home','active')

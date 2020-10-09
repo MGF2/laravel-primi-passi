@@ -2,7 +2,15 @@ header {
   text-align: center;
   li {
     display: inline-block;
+    height: 30px;
+    line-height: 30px;
     padding: 0 15px;
+    &:hover {
+      background-color: #b3e5fc;
+    }
+    &.active {
+      background-color: #b3e5fc;
+    }
     a {
       text-decoration: none;
       color: #001942;
