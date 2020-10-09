@@ -56,3 +56,15 @@ main .cards img {
   margin: 10px 20px 10px 0;
 }
 
+main .ban {
+  background-color: #fff;
+}
+
+main .ban img {
+  height: 140px;
+}
+
+main .ban .vp-preview {
+  height: 800px;
+}
+
