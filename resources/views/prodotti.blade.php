@@ -1,21 +1,3 @@
-@php
-$cards = config('prodotti');
-
-$lunghe = [];
-$corte = [];
-$cortissime = [];
-
-foreach ($cards as $card) {
-  if ( $card['tipo'] == 'lunga') {
-    $lunghe[] = $card;
-  } elseif ($card['tipo'] == 'corta') {
-    $corte[] = $card;
-  } elseif ($card['tipo'] == 'cortissima') {
-    $cortissime[] = $card;
-  }
-}
-// dd($cards,$lunghe,$corte,$cortissime);
-@endphp
 
     @extends('layout.app')
     @section('titolo','La Molisana Prodotti')
