@@ -14,22 +14,27 @@ class StaticPageController extends Controller
       return view('contatti');
     }
 
-    public function prodotti() {
-      $cards = config('prodotti');
-
-      $lunghe = [];
-      $corte = [];
-      $cortissime = [];
-
-      foreach ($cards as $card) {
-        if ( $card['tipo'] == 'lunga') {
-          $lunghe[] = $card;
-        } elseif ($card['tipo'] == 'corta') {
-          $corte[] = $card;
-        } elseif ($card['tipo'] == 'cortissima') {
-          $cortissime[] = $card;
-        }
-      }
-      return view('prodotti', compact('lunghe','corte','cortissime'));
-    }
+    // public function prodotti() {
+    //   $cards = config('prodotti');
+    //
+    //   $lunghe = [];
+    //   $corte = [];
+    //   $cortissime = [];
+    //
+    //   foreach ($cards as $key=>$card) {
+    //     if ( $card['tipo'] == 'lunga') {
+    //       $lunghe[$key] = $card;
+    //     } elseif ($card['tipo'] == 'corta') {
+    //       $corte[$key] = $card;
+    //     } elseif ($card['tipo'] == 'cortissima') {
+    //       $cortissime[$key] = $card;
+    //     }
+    //   }
+    //   // dd($cortissime,$lunghe,$corte);
+    //   return view('prodotti', compact('lunghe','corte','cortissime'));
+    // }
+    //
+    //  public function show($id) {
+    //
+    //  }
 }

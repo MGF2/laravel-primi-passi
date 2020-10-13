@@ -16,8 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', 'StaticPageController@home')
 ->name('home');
 
-Route::get('/prodotti', 'StaticPageController@prodotti')
+Route::get('/prodotti', 'ProdottoController@prodotti')
 ->name('prodotti');
+
+Route::get('/prodotti/show/{id}', 'ProdottoController@show')
+->name('show');
 
 Route::get('/contatti', 'StaticPageController@contatti')
 ->name('contatti');

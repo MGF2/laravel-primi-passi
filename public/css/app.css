@@ -39,6 +39,7 @@ main .cards {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 30px;
+  min-height: calc(100vh - 180px);
 }
 
 main .cards h2 {
@@ -54,6 +55,11 @@ main .cards h3 {
 main .cards img {
   width: 300px;
   margin: 10px 20px 10px 0;
+}
+
+main .cards a {
+  text-decoration: none;
+  color: #597a99;
 }
 
 main .ban {
